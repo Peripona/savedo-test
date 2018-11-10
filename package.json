@@ -7,7 +7,14 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "scaffold": "cd $(pwd) && node scripts/scaffold.js",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "test:ci": "CI=true npm test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run test:ci"
+    }
   },
   "dependencies": {
     "@babel/core": "7.1.0",
@@ -117,6 +124,7 @@
   },
   "devDependencies": {
     "ajv": "^6.5.5",
-    "eslint-plugin-prettier": "^3.0.0"
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.1.3"
   }
 }

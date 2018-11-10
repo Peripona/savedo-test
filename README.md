@@ -31,12 +31,22 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 **Note: to create a react component. first you should change directory to src/components!**
 
-Running this would create a component directory with the name passed and add 3 files same as the component name 
-in that directory, for ex. 
+Running this would create a component directory with the name passed as argument and add 3 files same as the component name 
+
+In that directory, for ex. 
 `cd src/components`
 `npm run scaffold App`
 would create App folder and add 3 files, 
+
 App.js (with default react component), App.css, App.spec.js (with default snapshot test)   
+
+### 'npm run lint'
+
+Added linting and prettier to the project for consistency of code and js coding conventions
+
+Running this script would throw errors in js like extra spaces and trailing commas etc.
+
+To fix mistakes use `npm run lint -- --fix` this would fix most of common mistakes
 
 ## Learn More
 
