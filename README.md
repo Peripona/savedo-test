@@ -54,6 +54,8 @@ Before every commit git hooks would test lint the code
 
 Before every push all test cases would be run. 
 
+We use husky to run node scripts `npm run lint` and `npm run test:ci` on pre-commit and pre-push respectively. 
+
 More on [Git Hooks](https://githooks.com/) 
 
 ## Learn More
