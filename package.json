@@ -8,12 +8,13 @@
     "test": "node scripts/test.js",
     "scaffold": "cd $(pwd) && node scripts/scaffold.js",
     "lint": "eslint src",
-    "test:ci": "CI=true npm test"
+    "test:ci": "CI=true npm test",
+    "push:confirm": "sh scripts/confirm-changes.sh"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint",
-      "pre-push": "npm run test:ci"
+      "pre-push": "npm run test:ci && npm run push:confirm"
     }
   },
   "dependencies": {
