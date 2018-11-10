@@ -40,13 +40,21 @@ would create App folder and add 3 files,
 
 App.js (with default react component), App.css, App.spec.js (with default snapshot test)   
 
-### 'npm run lint'
+### `npm run lint`
 
 Added linting and prettier to the project for consistency of code and js coding conventions
 
 Running this script would throw errors in js like extra spaces and trailing commas etc.
 
 To fix mistakes use `npm run lint -- --fix` this would fix most of common mistakes
+
+### Git hooks (pre-commit and pre-push)
+
+Before every commit git hooks would test lint the code
+
+Before every push all test cases would be run. 
+
+More on [Git Hooks](https://githooks.com/) 
 
 ## Learn More
 
