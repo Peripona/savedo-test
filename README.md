@@ -27,15 +27,16 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `npm run scaffold <componentName>`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Note: to create a react component. first you should change directory to src/components!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Running this would create a component directory with the name passed and add 3 files same as the component name 
+in that directory, for ex. 
+`cd src/components`
+`npm run scaffold App`
+would create App folder and add 3 files, 
+App.js (with default react component), App.css, App.spec.js (with default snapshot test)   
 
 ## Learn More
 
