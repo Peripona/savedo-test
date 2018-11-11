@@ -17,7 +17,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Issues
+      "children": <Connect(Issues)
         prop="Welcome"
       />,
       "store": Object {
@@ -48,7 +48,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Issues
+        "children": <Connect(Issues)
           prop="Welcome"
         />,
         "store": Object {

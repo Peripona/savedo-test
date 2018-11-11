@@ -18,6 +18,8 @@ class Issues extends Component {
   }
 }
 
+export { Issues as IssuesNotConnected };
+
 Issues.propTypes = {
   prop: PropTypes.string.isRequired,
 };

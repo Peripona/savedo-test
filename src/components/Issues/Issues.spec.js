@@ -1,15 +1,16 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Issues from './Issues';
+import { IssuesNotConnected } from './Issues';
 
-describe('<Issues />', () => {
+describe('<IssuesNotConnected />', () => {
   const build = passedProps => {
     const defaultProps = {};
-    return shallow(<Issues {...defaultProps} {...passedProps} />);
+    return shallow(<IssuesNotConnected {...defaultProps} {...passedProps} />);
   };
 
   it('should render', () => {
-    const component = build();
+    const dispatch = jest.fn();
+    const component = build({ dispatch });
     expect(component).toMatchSnapshot();
   });
 });
