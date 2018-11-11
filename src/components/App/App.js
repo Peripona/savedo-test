@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import styles from './App.css';
+import { Provider } from 'react-redux';
+import { store } from '../../state/store';
+import Issues from '../Issues/Issues';
 
 class App extends Component {
   render() {
-    const { prop } = this.props;
     return (
-      <div className={styles.App}>
-        <span>{prop}</span>
-      </div>
+      <Provider store={store}>
+        <Issues prop={'Welcome'} />
+      </Provider>
     );
   }
 }
-
-App.propTypes = {
-  prop: PropTypes.string.isRequired,
-};
-
 export default App;

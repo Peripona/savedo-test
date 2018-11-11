@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './App';
+import Issues from './Issues';
 
-describe('<App />', () => {
+describe('<Issues />', () => {
   const build = passedProps => {
     const defaultProps = {};
-    return shallow(<App {...defaultProps} {...passedProps} />);
+    return shallow(<Issues {...defaultProps} {...passedProps} />);
   };
 
   it('should render', () => {
