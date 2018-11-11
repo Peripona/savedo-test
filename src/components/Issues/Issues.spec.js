@@ -5,7 +5,7 @@ import Issues, { IssuesNotConnected } from './Issues';
 
 describe('<IssuesNotConnected />', () => {
   const build = passedProps => {
-    const defaultProps = {};
+    const defaultProps = { loading: false };
     return shallow(<IssuesNotConnected {...defaultProps} {...passedProps} />);
   };
 
@@ -17,11 +17,14 @@ describe('<IssuesNotConnected />', () => {
 
   it('should connect', () => {
     const mockStore = configureStore();
-    const store = mockStore({
+    const props = {
       data: {},
       loading: false,
+    };
+    const store = mockStore({
+      issues: props,
     });
-    const component = shallow(<Issues store={store} />);
+    const component = shallow(<Issues store={store} {...props} />);
     expect(component).toMatchSnapshot();
   });
 });

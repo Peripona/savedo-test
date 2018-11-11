@@ -9,10 +9,11 @@ class Issues extends Component {
     this.props.dispatch(fetchIssues('Singh'));
   }
   render() {
-    const { prop } = this.props;
+    const { loading } = this.props;
     return (
       <div className={styles.Issues}>
-        <span>{prop}</span>
+        <span>Loading {loading ? 'True' : 'False'}</span>
+        <div>Hakunama Tata</div>
       </div>
     );
   }
@@ -21,7 +22,9 @@ class Issues extends Component {
 export { Issues as IssuesNotConnected };
 
 Issues.propTypes = {
-  prop: PropTypes.string.isRequired,
+  loading: PropTypes.bool.isRequired,
 };
 
-export default connect()(Issues);
+const mapStateToProps = state => ({ loading: state.issues.loading });
+
+export default connect(mapStateToProps)(Issues);

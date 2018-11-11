@@ -17,9 +17,23 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Connect(Issues)
-        prop="Welcome"
-      />,
+      "children": <BrowserRouter>
+        <Link
+          replace={false}
+          to="/g/ex"
+        >
+          g/ex
+        </Link>
+        <Route
+          exact={true}
+          path="/"
+          render={[Function]}
+        />
+        <Route
+          component={[Function]}
+          path="/g/:id"
+        />
+      </BrowserRouter>,
       "store": Object {
         "dispatch": [Function],
         "getState": [Function],
@@ -34,10 +48,65 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "prop": "Welcome",
+        "children": Array [
+          <Link
+            replace={false}
+            to="/g/ex"
+          >
+            g/ex
+          </Link>,
+          <Route
+            exact={true}
+            path="/"
+            render={[Function]}
+          />,
+          <Route
+            component={[Function]}
+            path="/g/:id"
+          />,
+        ],
       },
       "ref": null,
-      "rendered": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "g/ex",
+            "replace": false,
+            "to": "/g/ex",
+          },
+          "ref": null,
+          "rendered": "g/ex",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "exact": true,
+            "path": "/",
+            "render": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/g/:id",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": [Function],
     },
     "type": [Function],
@@ -48,9 +117,23 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Connect(Issues)
-          prop="Welcome"
-        />,
+        "children": <BrowserRouter>
+          <Link
+            replace={false}
+            to="/g/ex"
+          >
+            g/ex
+          </Link>
+          <Route
+            exact={true}
+            path="/"
+            render={[Function]}
+          />
+          <Route
+            component={[Function]}
+            path="/g/:id"
+          />
+        </BrowserRouter>,
         "store": Object {
           "dispatch": [Function],
           "getState": [Function],
@@ -65,10 +148,65 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "prop": "Welcome",
+          "children": Array [
+            <Link
+              replace={false}
+              to="/g/ex"
+            >
+              g/ex
+            </Link>,
+            <Route
+              exact={true}
+              path="/"
+              render={[Function]}
+            />,
+            <Route
+              component={[Function]}
+              path="/g/:id"
+            />,
+          ],
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "g/ex",
+              "replace": false,
+              "to": "/g/ex",
+            },
+            "ref": null,
+            "rendered": "g/ex",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/g/:id",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
       "type": [Function],

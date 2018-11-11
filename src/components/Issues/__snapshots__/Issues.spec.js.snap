@@ -4,6 +4,8 @@ exports[`<IssuesNotConnected /> should connect 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Connect(Issues)
+    data={Object {}}
+    loading={false}
     store={
       Object {
         "clearActions": [Function],
@@ -28,7 +30,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "data": Object {},
       "dispatch": [Function],
+      "loading": false,
       "store": Object {
         "clearActions": [Function],
         "dispatch": [Function],
@@ -36,6 +40,25 @@ ShallowWrapper {
         "getState": [Function],
         "replaceReducer": [Function],
         "subscribe": [Function],
+      },
+      "storeSubscription": Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": [Function],
       },
     },
     "ref": null,
@@ -48,7 +71,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "data": Object {},
         "dispatch": [Function],
+        "loading": false,
         "store": Object {
           "clearActions": [Function],
           "dispatch": [Function],
@@ -56,6 +81,25 @@ ShallowWrapper {
           "getState": [Function],
           "replaceReducer": [Function],
           "subscribe": [Function],
+        },
+        "storeSubscription": Subscription {
+          "listeners": Object {
+            "clear": [Function],
+            "get": [Function],
+            "notify": [Function],
+            "subscribe": [Function],
+          },
+          "onStateChange": [Function],
+          "parentSub": undefined,
+          "store": Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          },
+          "unsubscribe": [Function],
         },
       },
       "ref": null,
@@ -105,6 +149,7 @@ ShallowWrapper {
         ],
       }
     }
+    loading={false}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -119,21 +164,48 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <span />,
+      "children": Array [
+        <span>
+          Loading 
+          False
+        </span>,
+        <div>
+          Hakunama Tata
+        </div>,
+      ],
       "className": undefined,
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": undefined,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Loading ",
+            "False",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Loading ",
+          "False",
+        ],
+        "type": "span",
       },
-      "ref": null,
-      "rendered": null,
-      "type": "span",
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Hakunama Tata",
+        },
+        "ref": null,
+        "rendered": "Hakunama Tata",
+        "type": "div",
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -142,21 +214,48 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <span />,
+        "children": Array [
+          <span>
+            Loading 
+            False
+          </span>,
+          <div>
+            Hakunama Tata
+          </div>,
+        ],
         "className": undefined,
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": undefined,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Loading ",
+              "False",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Loading ",
+            "False",
+          ],
+          "type": "span",
         },
-        "ref": null,
-        "rendered": null,
-        "type": "span",
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Hakunama Tata",
+          },
+          "ref": null,
+          "rendered": "Hakunama Tata",
+          "type": "div",
+        },
+      ],
       "type": "div",
     },
   ],
