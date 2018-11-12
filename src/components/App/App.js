@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
+import { ConnectedRouter } from 'connected-react-router';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
-import { store } from '../../state/store';
+import { Route, Switch } from 'react-router-dom';
+import { store, history } from '../../state/store';
 import Issues from '../Issues/Issues';
+import NotFound from '../NotFound/NotFound';
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Router>
-          <Link to={'/g/ex'}>g/ex</Link>
-          <Route exact path="/" render={() => <h1>Welcome</h1>} />
-          <Route path="/g/:id" component={Issues} />
-        </Router>
+        <ConnectedRouter history={history}>
+          <Switch>
+            <Route exact path="/" component={Issues} />
+            <Route exact path="/issue/:issueId(\d+)" component={Issues} />
+            <Route exact path="/details" component={Issues} />
+            <Route component={NotFound} />
+          </Switch>
+        </ConnectedRouter>
       </Provider>
     );
   }
