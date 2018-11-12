@@ -1,30 +1,33 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import styles from './Issues.css';
 import { connect } from 'react-redux';
-import { fetchIssues } from '../../state/issues/actions';
+import { searchRequest } from '../../state/issues/actions';
+
+const issuesUrl = 'https://api.github.com/repos/facebook/react/issues';
 
 class Issues extends Component {
   componentDidMount() {
-    this.props.dispatch(fetchIssues('Singh'));
+    this.props.dispatch(searchRequest({ url: issuesUrl }));
   }
   render() {
-    const { loading } = this.props;
+    const { fetching, data } = this.props;
     return (
       <div className={styles.Issues}>
-        <span>Loading {loading ? 'True' : 'False'}</span>
-        <div>Hakunama Tata</div>
+        {fetching && 'Loading...'}
+        {data && data.map(result => <div key={result.id}>{result.number}</div>)}
       </div>
     );
   }
 }
 
-export { Issues as IssuesNotConnected };
-
-Issues.propTypes = {
-  loading: PropTypes.bool.isRequired,
+const mapStateToProps = state => {
+  const { fetching, data } = state.issues;
+  return {
+    fetching,
+    data,
+  };
 };
 
-const mapStateToProps = state => ({ loading: state.issues.loading });
+const IssuesConnected = connect(mapStateToProps)(Issues);
 
-export default connect(mapStateToProps)(Issues);
+export { Issues, IssuesConnected };

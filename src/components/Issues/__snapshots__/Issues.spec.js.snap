@@ -1,10 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<IssuesNotConnected /> should connect 1`] = `
+exports[`<Issues /> should connect 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Connect(Issues)
-    data={Object {}}
+    data={
+      Array [
+        Object {
+          "id": 1,
+          "number": 2,
+        },
+      ]
+    }
     loading={false}
     store={
       Object {
@@ -30,8 +37,14 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "data": Object {},
+      "data": Array [
+        Object {
+          "id": 1,
+          "number": 2,
+        },
+      ],
       "dispatch": [Function],
+      "fetching": undefined,
       "loading": false,
       "store": Object {
         "clearActions": [Function],
@@ -71,8 +84,14 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "data": Object {},
+        "data": Array [
+          Object {
+            "id": 1,
+            "number": 2,
+          },
+        ],
         "dispatch": [Function],
+        "fetching": undefined,
         "loading": false,
         "store": Object {
           "clearActions": [Function],
@@ -127,18 +146,23 @@ ShallowWrapper {
 }
 `;
 
-exports[`<IssuesNotConnected /> should render 1`] = `
+exports[`<Issues /> should render 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Issues
+    data={
+      Array [
+        Object {
+          "id": 1,
+          "number": 2,
+        },
+      ]
+    }
     dispatch={
       [MockFunction] {
         "calls": Array [
           Array [
-            Object {
-              "type": "FETCH_ISSUES",
-              "url": "Singh",
-            },
+            [Function],
           ],
         ],
         "results": Array [
@@ -149,7 +173,7 @@ ShallowWrapper {
         ],
       }
     }
-    loading={false}
+    fetching={false}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -165,44 +189,27 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <span>
-          Loading 
-          False
-        </span>,
-        <div>
-          Hakunama Tata
-        </div>,
+        false,
+        Array [
+          <div>
+            2
+          </div>,
+        ],
       ],
       "className": undefined,
     },
     "ref": null,
     "rendered": Array [
+      false,
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "1",
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            "Loading ",
-            "False",
-          ],
+          "children": 2,
         },
         "ref": null,
-        "rendered": Array [
-          "Loading ",
-          "False",
-        ],
-        "type": "span",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Hakunama Tata",
-        },
-        "ref": null,
-        "rendered": "Hakunama Tata",
+        "rendered": 2,
         "type": "div",
       },
     ],
@@ -215,44 +222,27 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <span>
-            Loading 
-            False
-          </span>,
-          <div>
-            Hakunama Tata
-          </div>,
+          false,
+          Array [
+            <div>
+              2
+            </div>,
+          ],
         ],
         "className": undefined,
       },
       "ref": null,
       "rendered": Array [
+        false,
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "1",
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "Loading ",
-              "False",
-            ],
+            "children": 2,
           },
           "ref": null,
-          "rendered": Array [
-            "Loading ",
-            "False",
-          ],
-          "type": "span",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Hakunama Tata",
-          },
-          "ref": null,
-          "rendered": "Hakunama Tata",
+          "rendered": 2,
           "type": "div",
         },
       ],
