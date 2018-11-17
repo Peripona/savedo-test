@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import { store, history } from '../../state/store';
 import { IssuesConnected } from '../Issues/Issues';
 import NotFound from '../NotFound/NotFound';
+import { IssueDetailConnected } from '../IssueDetail/IssueDetail';
 
 class App extends Component {
   render() {
@@ -13,6 +14,11 @@ class App extends Component {
         <ConnectedRouter history={history}>
           <Switch>
             <Route exact path="/" component={IssuesConnected} />
+            <Route
+              exact
+              path="/details/:issueId(\d+)"
+              component={IssueDetailConnected}
+            />
             <Route component={NotFound} />
           </Switch>
         </ConnectedRouter>

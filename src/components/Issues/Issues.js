@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { searchRequest } from '../../state/issues/actions';
+import { Link } from 'react-router-dom';
+import { searchRequest, selectIssue } from '../../state/issues/actions';
 import './Issues.css';
 import Octicon, { Repo } from '@githubprimer/octicons-react';
 
@@ -9,15 +10,7 @@ import Issue from '../Issue/Issue';
 const issuesUrl = 'https://api.github.com/repos/facebook/react/issues';
 
 class Issues extends Component {
-  componentDidMount() {
-    this.props.dispatch(searchRequest({ url: issuesUrl }));
-  }
-
-  getIssuesList(data) {
-    return data.map((issue, index) => <Issue key={index} issue={issue} />);
-  }
-
-  getPageTitle() {
+  static getPageTitle() {
     return (
       <div className="mt-20">
         <span>
@@ -30,6 +23,27 @@ class Issues extends Component {
     );
   }
 
+  componentDidMount() {
+    this.props.dispatch(searchRequest({ url: issuesUrl }));
+  }
+
+  getIssuesList(data) {
+    return data.map(issue => (
+      <Link
+        className="link"
+        key={issue.id}
+        to={`/details/${issue.number}`}
+        onClick={this.issueSelected.bind(this, issue.number)}
+      >
+        <Issue issue={issue} />
+      </Link>
+    ));
+  }
+
+  issueSelected(issueId) {
+    this.props.dispatch(selectIssue(issueId));
+  }
+
   render() {
     const { fetching, data } = this.props;
     return (
@@ -37,7 +51,7 @@ class Issues extends Component {
         {fetching && 'Loading...'}
         {data && data.length > 0 && (
           <div className="issues">
-            {this.getPageTitle()}
+            {Issues.getPageTitle()}
             <ul className="issues-list">{this.getIssuesList(data)}</ul>
           </div>
         )}

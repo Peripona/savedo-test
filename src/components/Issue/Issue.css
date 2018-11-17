@@ -12,6 +12,10 @@
   background: #f6f8fa;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .icon-wrapper {
   padding: 0 8px;
   color:#28a745;
