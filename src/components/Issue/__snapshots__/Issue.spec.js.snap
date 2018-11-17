@@ -1,0 +1,865 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Issue /> should render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Issue
+    issue={
+      Object {
+        "comments": 2,
+        "created_at": "2018-11-13T08:26:59Z",
+        "html_url": "https://github.com/facebook/react/issues/14213",
+        "id": 380109743,
+        "labels": Array [
+          Object {
+            "color": "fef2c0",
+            "id": 127893911,
+            "name": "Component: DOM",
+          },
+          Object {
+            "color": "b60205",
+            "id": 40929151,
+            "name": "Type: Bug",
+          },
+        ],
+        "number": 14213,
+        "state": "open",
+        "title": "Textarea loses focus after inserting paired punctuation with Chinese IME",
+        "user": Object {
+          "id": 44996396,
+          "login": "LastShadowNeo",
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="icon-wrapper"
+        >
+          <Octicon
+            className="octicon"
+            icon={[Function]}
+            size="small"
+            verticalAlign="middle"
+          />
+        </div>,
+        <div
+          className="title-wrapper"
+        >
+          <div
+            className="title"
+          >
+            Textarea loses focus after inserting paired punctuation with Chinese IME
+            <span
+              className="label-component"
+              style={
+                Object {
+                  "backgroundColor": "#fef2c0",
+                }
+              }
+            >
+              Component: DOM
+            </span>
+            <span
+              className="label-component"
+              style={
+                Object {
+                  "backgroundColor": "#b60205",
+                }
+              }
+            >
+              Type: Bug
+            </span>
+          </div>
+          <div
+            className="meta-wrapper"
+          >
+            <div
+              className="issue-number"
+            >
+              #
+              14213
+               
+            </div>
+            <div
+              className="ml-5"
+            >
+              Opened on 
+              2018-11-13T08:26:59Z
+            </div>
+            <div
+              className="ml-5"
+            >
+              By 
+              LastShadowNeo
+               
+            </div>
+          </div>
+        </div>,
+        <div
+          className="comments"
+        >
+          <span>
+            <Octicon
+              className="octicon"
+              icon={[Function]}
+              size="small"
+              verticalAlign="middle"
+            />
+             
+            2
+          </span>
+        </div>,
+      ],
+      "className": "issue-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Octicon
+            className="octicon"
+            icon={[Function]}
+            size="small"
+            verticalAlign="middle"
+          />,
+          "className": "icon-wrapper",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "className": "octicon",
+            "icon": [Function],
+            "size": "small",
+            "verticalAlign": "middle",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="title"
+            >
+              Textarea loses focus after inserting paired punctuation with Chinese IME
+              <span
+                className="label-component"
+                style={
+                  Object {
+                    "backgroundColor": "#fef2c0",
+                  }
+                }
+              >
+                Component: DOM
+              </span>
+              <span
+                className="label-component"
+                style={
+                  Object {
+                    "backgroundColor": "#b60205",
+                  }
+                }
+              >
+                Type: Bug
+              </span>
+            </div>,
+            <div
+              className="meta-wrapper"
+            >
+              <div
+                className="issue-number"
+              >
+                #
+                14213
+                 
+              </div>
+              <div
+                className="ml-5"
+              >
+                Opened on 
+                2018-11-13T08:26:59Z
+              </div>
+              <div
+                className="ml-5"
+              >
+                By 
+                LastShadowNeo
+                 
+              </div>
+            </div>,
+          ],
+          "className": "title-wrapper",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Textarea loses focus after inserting paired punctuation with Chinese IME",
+                Array [
+                  <span
+                    className="label-component"
+                    style={
+                      Object {
+                        "backgroundColor": "#fef2c0",
+                      }
+                    }
+                  >
+                    Component: DOM
+                  </span>,
+                  <span
+                    className="label-component"
+                    style={
+                      Object {
+                        "backgroundColor": "#b60205",
+                      }
+                    }
+                  >
+                    Type: Bug
+                  </span>,
+                ],
+              ],
+              "className": "title",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Textarea loses focus after inserting paired punctuation with Chinese IME",
+              Object {
+                "instance": null,
+                "key": "label-0",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Component: DOM",
+                  "className": "label-component",
+                  "style": Object {
+                    "backgroundColor": "#fef2c0",
+                  },
+                },
+                "ref": null,
+                "rendered": "Component: DOM",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": "label-1",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Type: Bug",
+                  "className": "label-component",
+                  "style": Object {
+                    "backgroundColor": "#b60205",
+                  },
+                },
+                "ref": null,
+                "rendered": "Type: Bug",
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="issue-number"
+                >
+                  #
+                  14213
+                   
+                </div>,
+                <div
+                  className="ml-5"
+                >
+                  Opened on 
+                  2018-11-13T08:26:59Z
+                </div>,
+                <div
+                  className="ml-5"
+                >
+                  By 
+                  LastShadowNeo
+                   
+                </div>,
+              ],
+              "className": "meta-wrapper",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "#",
+                    14213,
+                    " ",
+                  ],
+                  "className": "issue-number",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "#",
+                  14213,
+                  " ",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Opened on ",
+                    "2018-11-13T08:26:59Z",
+                  ],
+                  "className": "ml-5",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Opened on ",
+                  "2018-11-13T08:26:59Z",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "By ",
+                    "LastShadowNeo",
+                    " ",
+                  ],
+                  "className": "ml-5",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "By ",
+                  "LastShadowNeo",
+                  " ",
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <span>
+            <Octicon
+              className="octicon"
+              icon={[Function]}
+              size="small"
+              verticalAlign="middle"
+            />
+             
+            2
+          </span>,
+          "className": "comments",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Octicon
+                className="octicon"
+                icon={[Function]}
+                size="small"
+                verticalAlign="middle"
+              />,
+              " ",
+              2,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "className": "octicon",
+                "icon": [Function],
+                "size": "small",
+                "verticalAlign": "middle",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            " ",
+            2,
+          ],
+          "type": "span",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "li",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="icon-wrapper"
+          >
+            <Octicon
+              className="octicon"
+              icon={[Function]}
+              size="small"
+              verticalAlign="middle"
+            />
+          </div>,
+          <div
+            className="title-wrapper"
+          >
+            <div
+              className="title"
+            >
+              Textarea loses focus after inserting paired punctuation with Chinese IME
+              <span
+                className="label-component"
+                style={
+                  Object {
+                    "backgroundColor": "#fef2c0",
+                  }
+                }
+              >
+                Component: DOM
+              </span>
+              <span
+                className="label-component"
+                style={
+                  Object {
+                    "backgroundColor": "#b60205",
+                  }
+                }
+              >
+                Type: Bug
+              </span>
+            </div>
+            <div
+              className="meta-wrapper"
+            >
+              <div
+                className="issue-number"
+              >
+                #
+                14213
+                 
+              </div>
+              <div
+                className="ml-5"
+              >
+                Opened on 
+                2018-11-13T08:26:59Z
+              </div>
+              <div
+                className="ml-5"
+              >
+                By 
+                LastShadowNeo
+                 
+              </div>
+            </div>
+          </div>,
+          <div
+            className="comments"
+          >
+            <span>
+              <Octicon
+                className="octicon"
+                icon={[Function]}
+                size="small"
+                verticalAlign="middle"
+              />
+               
+              2
+            </span>
+          </div>,
+        ],
+        "className": "issue-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Octicon
+              className="octicon"
+              icon={[Function]}
+              size="small"
+              verticalAlign="middle"
+            />,
+            "className": "icon-wrapper",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "className": "octicon",
+              "icon": [Function],
+              "size": "small",
+              "verticalAlign": "middle",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="title"
+              >
+                Textarea loses focus after inserting paired punctuation with Chinese IME
+                <span
+                  className="label-component"
+                  style={
+                    Object {
+                      "backgroundColor": "#fef2c0",
+                    }
+                  }
+                >
+                  Component: DOM
+                </span>
+                <span
+                  className="label-component"
+                  style={
+                    Object {
+                      "backgroundColor": "#b60205",
+                    }
+                  }
+                >
+                  Type: Bug
+                </span>
+              </div>,
+              <div
+                className="meta-wrapper"
+              >
+                <div
+                  className="issue-number"
+                >
+                  #
+                  14213
+                   
+                </div>
+                <div
+                  className="ml-5"
+                >
+                  Opened on 
+                  2018-11-13T08:26:59Z
+                </div>
+                <div
+                  className="ml-5"
+                >
+                  By 
+                  LastShadowNeo
+                   
+                </div>
+              </div>,
+            ],
+            "className": "title-wrapper",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Textarea loses focus after inserting paired punctuation with Chinese IME",
+                  Array [
+                    <span
+                      className="label-component"
+                      style={
+                        Object {
+                          "backgroundColor": "#fef2c0",
+                        }
+                      }
+                    >
+                      Component: DOM
+                    </span>,
+                    <span
+                      className="label-component"
+                      style={
+                        Object {
+                          "backgroundColor": "#b60205",
+                        }
+                      }
+                    >
+                      Type: Bug
+                    </span>,
+                  ],
+                ],
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Textarea loses focus after inserting paired punctuation with Chinese IME",
+                Object {
+                  "instance": null,
+                  "key": "label-0",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Component: DOM",
+                    "className": "label-component",
+                    "style": Object {
+                      "backgroundColor": "#fef2c0",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": "Component: DOM",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": "label-1",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Type: Bug",
+                    "className": "label-component",
+                    "style": Object {
+                      "backgroundColor": "#b60205",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": "Type: Bug",
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="issue-number"
+                  >
+                    #
+                    14213
+                     
+                  </div>,
+                  <div
+                    className="ml-5"
+                  >
+                    Opened on 
+                    2018-11-13T08:26:59Z
+                  </div>,
+                  <div
+                    className="ml-5"
+                  >
+                    By 
+                    LastShadowNeo
+                     
+                  </div>,
+                ],
+                "className": "meta-wrapper",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "#",
+                      14213,
+                      " ",
+                    ],
+                    "className": "issue-number",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "#",
+                    14213,
+                    " ",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Opened on ",
+                      "2018-11-13T08:26:59Z",
+                    ],
+                    "className": "ml-5",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Opened on ",
+                    "2018-11-13T08:26:59Z",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "By ",
+                      "LastShadowNeo",
+                      " ",
+                    ],
+                    "className": "ml-5",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "By ",
+                    "LastShadowNeo",
+                    " ",
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <span>
+              <Octicon
+                className="octicon"
+                icon={[Function]}
+                size="small"
+                verticalAlign="middle"
+              />
+               
+              2
+            </span>,
+            "className": "comments",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Octicon
+                  className="octicon"
+                  icon={[Function]}
+                  size="small"
+                  verticalAlign="middle"
+                />,
+                " ",
+                2,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "octicon",
+                  "icon": [Function],
+                  "size": "small",
+                  "verticalAlign": "middle",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              " ",
+              2,
+            ],
+            "type": "span",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "li",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

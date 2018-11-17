@@ -1,3 +1,20 @@
-.Issues {
+.issues {
+  margin-right: auto;
+  margin-left: auto;
+  width:95%;
+  max-width:980px;
+}
 
+.issues-list{
+  border-radius: 3px ;
+  border-top:1px solid #e0e4e8;
+  list-style-type: none;
+  padding: 0;
+}
+
+
+@media only screen and (max-width: 620px) {
+  .issues{
+    width:100% ;
+  }
 }
