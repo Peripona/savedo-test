@@ -1,0 +1,45 @@
+.issue-detail-container {
+  margin-right: auto;
+  margin-left: auto;
+  width:95%;
+  max-width:980px;
+}
+.issue-detail-container .title{
+  font-weight: 400;
+}
+.issue-detail-container .issue-detail{
+  border-radius: 3px ;
+  border-top:1px solid #e0e4e8;
+  list-style-type: none;
+  padding: 0;
+
+}
+.status-container {
+  margin-bottom:20px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.status-label-open{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:5px;
+  border-radius: 3px;
+  background-color:#2cbe4e;
+  font-weight:600;
+  color:white
+
+}
+
+
+@media only screen and (max-width: 620px) {
+  .issue-detail-container .title{
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .status-container {
+    font-size: 12px;
+  }
+}

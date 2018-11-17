@@ -4,6 +4,19 @@ exports[`<IssueDetail /> should render 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <IssueDetail
+    data={
+      Array [
+        Object {
+          "body": "some comment",
+          "created_at": "xx.yy.zzzz",
+          "id": 1234,
+          "user": Object {
+            "avatar_url": "some-url",
+            "login": "savedo-commentor",
+          },
+        },
+      ]
+    }
     match={
       Object {
         "params": Object {
@@ -12,7 +25,22 @@ ShallowWrapper {
       }
     }
     prop="Testing"
-    selected={123}
+    selected={
+      Object {
+        "body": "comment",
+        "comments": 1,
+        "created_at": "xx.yy.zzzz",
+        "html_url": "some_url",
+        "labels": Array [],
+        "number": 123,
+        "state": "open",
+        "title": "Some Title",
+        "user": Object {
+          "avatar_url": "some-url",
+          "login": "savedo",
+        },
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -28,15 +56,85 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <span>
-          Testing
-        </span>,
-        <h1>
-          123
-        </h1>,
-        <h2 />,
+        <div>
+          <span>
+            <h1
+              className="title"
+            >
+              Some Title
+               
+              <span
+                className="color-light"
+              >
+                #
+                123
+              </span>
+            </h1>
+          </span>
+        </div>,
+        <div
+          className="status-container"
+        >
+          <div
+            className="status-label-open"
+          >
+            <Octicon
+              className="octicon"
+              icon={[Function]}
+              size="small"
+              verticalAlign="middle"
+            />
+             
+             Open
+          </div>
+          <div
+            className="ml-5 color-light"
+          >
+            <b>
+              savedo
+            </b>
+             opened this issue on 
+            xx.yy.zzzz
+             . 
+            1
+             Comments
+          </div>
+        </div>,
+        <Comment
+          data={
+            Object {
+              "body": "comment",
+              "comments": 1,
+              "created_at": "xx.yy.zzzz",
+              "html_url": "some_url",
+              "labels": Array [],
+              "number": 123,
+              "state": "open",
+              "title": "Some Title",
+              "user": Object {
+                "avatar_url": "some-url",
+                "login": "savedo",
+              },
+            }
+          }
+        />,
+        Array [
+          <Comment
+            data={
+              Object {
+                "body": "some comment",
+                "created_at": "xx.yy.zzzz",
+                "id": 1234,
+                "user": Object {
+                  "avatar_url": "some-url",
+                  "login": "savedo-commentor",
+                },
+              }
+            }
+          />,
+        ],
       ],
-      "className": "IssueDetail",
+      "className": "issue-detail-container",
     },
     "ref": null,
     "rendered": Array [
@@ -45,33 +143,243 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Testing",
+          "children": <span>
+            <h1
+              className="title"
+            >
+              Some Title
+               
+              <span
+                className="color-light"
+              >
+                #
+                123
+              </span>
+            </h1>
+          </span>,
         },
         "ref": null,
-        "rendered": "Testing",
-        "type": "span",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1
+              className="title"
+            >
+              Some Title
+               
+              <span
+                className="color-light"
+              >
+                #
+                123
+              </span>
+            </h1>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Some Title",
+                " ",
+                <span
+                  className="color-light"
+                >
+                  #
+                  123
+                </span>,
+              ],
+              "className": "title",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Some Title",
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "#",
+                    123,
+                  ],
+                  "className": "color-light",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "#",
+                  123,
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "h1",
+          },
+          "type": "span",
+        },
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": 123,
+          "children": Array [
+            <div
+              className="status-label-open"
+            >
+              <Octicon
+                className="octicon"
+                icon={[Function]}
+                size="small"
+                verticalAlign="middle"
+              />
+               
+               Open
+            </div>,
+            <div
+              className="ml-5 color-light"
+            >
+              <b>
+                savedo
+              </b>
+               opened this issue on 
+              xx.yy.zzzz
+               . 
+              1
+               Comments
+            </div>,
+          ],
+          "className": "status-container",
         },
         "ref": null,
-        "rendered": 123,
-        "type": "h1",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Octicon
+                  className="octicon"
+                  icon={[Function]}
+                  size="small"
+                  verticalAlign="middle"
+                />,
+                " ",
+                " Open",
+              ],
+              "className": "status-label-open",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "octicon",
+                  "icon": [Function],
+                  "size": "small",
+                  "verticalAlign": "middle",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              " ",
+              " Open",
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <b>
+                  savedo
+                </b>,
+                " opened this issue on ",
+                "xx.yy.zzzz",
+                " . ",
+                1,
+                " Comments",
+              ],
+              "className": "ml-5 color-light",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "savedo",
+                },
+                "ref": null,
+                "rendered": "savedo",
+                "type": "b",
+              },
+              " opened this issue on ",
+              "xx.yy.zzzz",
+              " . ",
+              1,
+              " Comments",
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": undefined,
+          "data": Object {
+            "body": "comment",
+            "comments": 1,
+            "created_at": "xx.yy.zzzz",
+            "html_url": "some_url",
+            "labels": Array [],
+            "number": 123,
+            "state": "open",
+            "title": "Some Title",
+            "user": Object {
+              "avatar_url": "some-url",
+              "login": "savedo",
+            },
+          },
         },
         "ref": null,
         "rendered": null,
-        "type": "h2",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1234",
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "body": "some comment",
+            "created_at": "xx.yy.zzzz",
+            "id": 1234,
+            "user": Object {
+              "avatar_url": "some-url",
+              "login": "savedo-commentor",
+            },
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -83,15 +391,85 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <span>
-            Testing
-          </span>,
-          <h1>
-            123
-          </h1>,
-          <h2 />,
+          <div>
+            <span>
+              <h1
+                className="title"
+              >
+                Some Title
+                 
+                <span
+                  className="color-light"
+                >
+                  #
+                  123
+                </span>
+              </h1>
+            </span>
+          </div>,
+          <div
+            className="status-container"
+          >
+            <div
+              className="status-label-open"
+            >
+              <Octicon
+                className="octicon"
+                icon={[Function]}
+                size="small"
+                verticalAlign="middle"
+              />
+               
+               Open
+            </div>
+            <div
+              className="ml-5 color-light"
+            >
+              <b>
+                savedo
+              </b>
+               opened this issue on 
+              xx.yy.zzzz
+               . 
+              1
+               Comments
+            </div>
+          </div>,
+          <Comment
+            data={
+              Object {
+                "body": "comment",
+                "comments": 1,
+                "created_at": "xx.yy.zzzz",
+                "html_url": "some_url",
+                "labels": Array [],
+                "number": 123,
+                "state": "open",
+                "title": "Some Title",
+                "user": Object {
+                  "avatar_url": "some-url",
+                  "login": "savedo",
+                },
+              }
+            }
+          />,
+          Array [
+            <Comment
+              data={
+                Object {
+                  "body": "some comment",
+                  "created_at": "xx.yy.zzzz",
+                  "id": 1234,
+                  "user": Object {
+                    "avatar_url": "some-url",
+                    "login": "savedo-commentor",
+                  },
+                }
+              }
+            />,
+          ],
         ],
-        "className": "IssueDetail",
+        "className": "issue-detail-container",
       },
       "ref": null,
       "rendered": Array [
@@ -100,33 +478,243 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Testing",
+            "children": <span>
+              <h1
+                className="title"
+              >
+                Some Title
+                 
+                <span
+                  className="color-light"
+                >
+                  #
+                  123
+                </span>
+              </h1>
+            </span>,
           },
           "ref": null,
-          "rendered": "Testing",
-          "type": "span",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h1
+                className="title"
+              >
+                Some Title
+                 
+                <span
+                  className="color-light"
+                >
+                  #
+                  123
+                </span>
+              </h1>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Some Title",
+                  " ",
+                  <span
+                    className="color-light"
+                  >
+                    #
+                    123
+                  </span>,
+                ],
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Some Title",
+                " ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "#",
+                      123,
+                    ],
+                    "className": "color-light",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "#",
+                    123,
+                  ],
+                  "type": "span",
+                },
+              ],
+              "type": "h1",
+            },
+            "type": "span",
+          },
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": 123,
+            "children": Array [
+              <div
+                className="status-label-open"
+              >
+                <Octicon
+                  className="octicon"
+                  icon={[Function]}
+                  size="small"
+                  verticalAlign="middle"
+                />
+                 
+                 Open
+              </div>,
+              <div
+                className="ml-5 color-light"
+              >
+                <b>
+                  savedo
+                </b>
+                 opened this issue on 
+                xx.yy.zzzz
+                 . 
+                1
+                 Comments
+              </div>,
+            ],
+            "className": "status-container",
           },
           "ref": null,
-          "rendered": 123,
-          "type": "h1",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Octicon
+                    className="octicon"
+                    icon={[Function]}
+                    size="small"
+                    verticalAlign="middle"
+                  />,
+                  " ",
+                  " Open",
+                ],
+                "className": "status-label-open",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "octicon",
+                    "icon": [Function],
+                    "size": "small",
+                    "verticalAlign": "middle",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                " ",
+                " Open",
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <b>
+                    savedo
+                  </b>,
+                  " opened this issue on ",
+                  "xx.yy.zzzz",
+                  " . ",
+                  1,
+                  " Comments",
+                ],
+                "className": "ml-5 color-light",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "savedo",
+                  },
+                  "ref": null,
+                  "rendered": "savedo",
+                  "type": "b",
+                },
+                " opened this issue on ",
+                "xx.yy.zzzz",
+                " . ",
+                1,
+                " Comments",
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": undefined,
+            "data": Object {
+              "body": "comment",
+              "comments": 1,
+              "created_at": "xx.yy.zzzz",
+              "html_url": "some_url",
+              "labels": Array [],
+              "number": 123,
+              "state": "open",
+              "title": "Some Title",
+              "user": Object {
+                "avatar_url": "some-url",
+                "login": "savedo",
+              },
+            },
           },
           "ref": null,
           "rendered": null,
-          "type": "h2",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1234",
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "body": "some comment",
+              "created_at": "xx.yy.zzzz",
+              "id": 1234,
+              "user": Object {
+                "avatar_url": "some-url",
+                "login": "savedo-commentor",
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": "div",

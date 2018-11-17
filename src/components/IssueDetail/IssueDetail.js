@@ -1,29 +1,94 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import styles from './IssueDetail.module.css';
 import { connect } from 'react-redux';
+import { detailsRequest } from '../../state/details/actions';
+import Comment from '../Comment/Comment';
+import Octicon, { IssueOpened } from '@githubprimer/octicons-react';
+import './IssueDetail.css';
 
 class IssueDetail extends Component {
-  render() {
-    const { prop = 'Hello' } = this.props;
+  componentDidMount() {
+    const { selected, dispatch, data } = this.props;
+    if (data && data.length > 0) {
+      return;
+    }
+    dispatch(detailsRequest({ url: selected.comments_url }));
+  }
+
+  static getTitle(selected) {
+    const { title, number } = selected;
     return (
-      <div className={styles.IssueDetail}>
-        <span>{prop}</span>
-        <h1>{this.props.match.params.issueId}</h1>
-        <h2>{this.props.selected.number}</h2>
+      <div>
+        <span>
+          <h1 className="title">
+            {title} <span className="color-light">#{number}</span>
+          </h1>
+        </span>
+      </div>
+    );
+  }
+
+  static getSubtitle(selected) {
+    const {
+      user: { login },
+      created_at,
+      comments,
+    } = selected;
+    return (
+      <div className="status-container">
+        <div className="status-label-open">
+          <Octicon icon={IssueOpened} size="small" verticalAlign="middle" />{' '}
+          &nbsp;Open
+        </div>
+        <div className="ml-5 color-light">
+          <b>{login}</b> opened this issue on {created_at} . {comments} Comments
+        </div>
+      </div>
+    );
+  }
+
+  render() {
+    const { selected, data } = this.props;
+    return (
+      <div className="issue-detail-container">
+        {IssueDetail.getTitle(selected)}
+        {IssueDetail.getSubtitle(selected)}
+        <Comment data={selected} />
+        {data &&
+          data.length > 0 &&
+          data.map(comment => <Comment key={comment.id} data={comment} />)}
       </div>
     );
   }
 }
 
 IssueDetail.propTypes = {
-  prop: PropTypes.string.isRequired,
+  selected: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    number: PropTypes.number.isRequired,
+    created_at: PropTypes.string.isRequired,
+    html_url: PropTypes.string.isRequired,
+    state: PropTypes.string.isRequired,
+    labels: PropTypes.arrayOf(
+      PropTypes.shape({
+        color: PropTypes.string,
+        name: PropTypes.string,
+      }),
+    ).isRequired,
+    comments: PropTypes.number.isRequired,
+    user: PropTypes.shape({
+      login: PropTypes.string.isRequired,
+      avatar_url: PropTypes.string,
+    }),
+  }).isRequired,
 };
 
 const mapsStateToProps = state => {
   const { selected } = state.issues;
+  const { data } = state.details;
   return {
     selected,
+    data,
   };
 };
 

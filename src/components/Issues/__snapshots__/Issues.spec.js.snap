@@ -570,21 +570,7 @@ browser: safari
         },
       ]
     }
-    dispatch={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            [Function],
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
+    dispatch={[MockFunction]}
     fetching={false}
   />,
   Symbol(enzyme.__renderer__): Object {
