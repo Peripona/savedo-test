@@ -12,6 +12,10 @@
   padding: 0;
 }
 
+.home {
+  text-decoration: none;
+}
+
 
 @media only screen and (max-width: 620px) {
   .issues{

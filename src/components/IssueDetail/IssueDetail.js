@@ -6,6 +6,7 @@ import Comment from '../Comment/Comment';
 import Octicon, { IssueOpened } from '@githubprimer/octicons-react';
 import './IssueDetail.css';
 import { Redirect } from 'react-router-dom';
+import { Issues } from '../Issues/Issues';
 
 class IssueDetail extends Component {
   componentDidMount() {
@@ -55,6 +56,7 @@ class IssueDetail extends Component {
     }
     return (
       <div className="issue-detail-container">
+        {Issues.getPageTitle()}
         {IssueDetail.getTitle(selected)}
         {IssueDetail.getSubtitle(selected)}
         <Comment data={selected} />

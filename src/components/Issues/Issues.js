@@ -12,14 +12,14 @@ const issuesUrl = 'https://api.github.com/repos/facebook/react/issues';
 class Issues extends Component {
   static getPageTitle() {
     return (
-      <div className="mt-20">
+      <Link className="mt-20 home" to={'/'}>
         <span>
           <Octicon icon={Repo} size="small" verticalAlign="middle" />
         </span>
         <span className=" ml-5 project-title color-primary">
           facebook<b>react</b>
         </span>
-      </div>
+      </Link>
     );
   }
 
@@ -45,10 +45,9 @@ class Issues extends Component {
   }
 
   render() {
-    const { fetching, data } = this.props;
+    const { data } = this.props;
     return (
       <div>
-        {fetching && 'Loading...'}
         {data && data.length > 0 && (
           <div className="issues">
             {Issues.getPageTitle()}
