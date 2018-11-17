@@ -40,7 +40,8 @@ describe('<IssueDetail />', () => {
   };
 
   it('should render', () => {
-    const component = build({ prop: 'Testing' });
+    const dispatch = jest.fn();
+    const component = build({ dispatch });
     expect(component).toMatchSnapshot();
   });
 });

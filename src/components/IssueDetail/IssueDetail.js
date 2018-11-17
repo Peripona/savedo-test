@@ -5,11 +5,12 @@ import { detailsRequest } from '../../state/details/actions';
 import Comment from '../Comment/Comment';
 import Octicon, { IssueOpened } from '@githubprimer/octicons-react';
 import './IssueDetail.css';
+import { Redirect } from 'react-router-dom';
 
 class IssueDetail extends Component {
   componentDidMount() {
-    const { selected, dispatch, data } = this.props;
-    if (data && data.length > 0) {
+    const { selected, dispatch } = this.props;
+    if (selected === undefined) {
       return;
     }
     dispatch(detailsRequest({ url: selected.comments_url }));
@@ -49,6 +50,9 @@ class IssueDetail extends Component {
 
   render() {
     const { selected, data } = this.props;
+    if (selected === undefined || !selected.number) {
+      return <Redirect to={'/'} />;
+    }
     return (
       <div className="issue-detail-container">
         {IssueDetail.getTitle(selected)}

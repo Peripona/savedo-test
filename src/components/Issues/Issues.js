@@ -24,9 +24,6 @@ class Issues extends Component {
   }
 
   componentDidMount() {
-    if (this.props.data && this.props.data.length > 0) {
-      return;
-    }
     this.props.dispatch(searchRequest({ url: issuesUrl }));
   }
 

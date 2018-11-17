@@ -17,6 +17,21 @@ ShallowWrapper {
         },
       ]
     }
+    dispatch={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            [Function],
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
     match={
       Object {
         "params": Object {
@@ -24,7 +39,6 @@ ShallowWrapper {
         },
       }
     }
-    prop="Testing"
     selected={
       Object {
         "body": "comment",
