@@ -1,13 +1,13 @@
 {
   "main.css": "/savedo-test/static/css/main.81b75d85.chunk.css",
-  "main.js": "/savedo-test/static/js/main.3c771d23.chunk.js",
-  "main.js.map": "/savedo-test/static/js/main.3c771d23.chunk.js.map",
+  "main.js": "/savedo-test/static/js/main.51232aa5.chunk.js",
+  "main.js.map": "/savedo-test/static/js/main.51232aa5.chunk.js.map",
   "static/js/1.0d409414.chunk.js": "/savedo-test/static/js/1.0d409414.chunk.js",
   "static/js/1.0d409414.chunk.js.map": "/savedo-test/static/js/1.0d409414.chunk.js.map",
   "runtime~main.js": "/savedo-test/static/js/runtime~main.81374bc9.js",
   "runtime~main.js.map": "/savedo-test/static/js/runtime~main.81374bc9.js.map",
   "static/css/main.81b75d85.chunk.css.map": "/savedo-test/static/css/main.81b75d85.chunk.css.map",
   "index.html": "/savedo-test/index.html",
-  "precache-manifest.e0fda3fd13944e4b3e2c8db874204eaf.js": "/savedo-test/precache-manifest.e0fda3fd13944e4b3e2c8db874204eaf.js",
+  "precache-manifest.0b1ccb7a6d112ff7d69ca6339931606b.js": "/savedo-test/precache-manifest.0b1ccb7a6d112ff7d69ca6339931606b.js",
   "service-worker.js": "/savedo-test/service-worker.js"
 }
