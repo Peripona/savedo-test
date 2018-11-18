@@ -19,7 +19,7 @@
       "pre-push": "npm run test:ci && npm run push:confirm"
     }
   },
-  "homepage": "https://peripona.github.io/savedo-test",
+  "homepage": ".",
   "dependencies": {
     "@babel/core": "7.1.0",
     "@githubprimer/octicons-react": "^8.1.3",
