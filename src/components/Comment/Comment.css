@@ -21,6 +21,10 @@
     margin-bottom:20px;
 }
 
+.comment-wrapper .comment-data img {
+  max-width: 500px;
+}
+
 .comment-wrapper .user-name{
     color: #808182;
     font-size: 15px;
@@ -36,7 +40,10 @@
 
 
 @media only screen and (max-width: 620px) {
-.comment-wrapper .user-image img{
-    display: none;
-}
+  .comment-wrapper .user-image img{
+      display: none;
+  }
+  .comment-wrapper .comment-data img {
+    max-width: 300px;
+  }
 }
