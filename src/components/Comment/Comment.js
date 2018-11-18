@@ -2,23 +2,28 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Comment.css';
 import ReactMarkdown from 'react-markdown';
+import { meaningFullTime } from '../../util/helpers';
 
 class Comment extends Component {
   render() {
-    const { data } = this.props;
+    const {
+      user: { avatar_url, login },
+      created_at,
+      body,
+    } = this.props.data;
     return (
       <div className="comment-wrapper">
         <div className="user-image">
-          <img src={data.user && data.user.avatar_url} alt="user avatar" />
+          {avatar_url && <img src={avatar_url} alt="user avatar" />}
         </div>
 
         <div className="comment-data">
           <div className="user-name">
-            <b>{data.user && data.user.login} </b>
-            commented On {data.created_at}
+            <b>{login} </b>
+            commented On {meaningFullTime(created_at)}
           </div>
           <div className="body">
-            <ReactMarkdown source={data.body} />
+            <ReactMarkdown source={body} />
           </div>
         </div>
       </div>

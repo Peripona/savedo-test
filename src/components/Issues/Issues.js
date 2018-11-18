@@ -10,6 +10,7 @@ import Issue from '../Issue/Issue';
 const issuesUrl = 'https://api.github.com/repos/facebook/react/issues';
 
 class Issues extends Component {
+  //https://github.com/ReactTraining/history/pull/570 :: multiple clicks on Link causes browser history to explode
   static getPageTitle() {
     return (
       <Link className="mt-20 home" to={'/'}>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Issue.css';
 import Octicon, { IssueOpened, Comment } from '@githubprimer/octicons-react';
+import { meaningFullTime } from '../../util/helpers';
 class Issue extends Component {
   getLabels(labels) {
     if (!labels) return;
@@ -37,7 +38,7 @@ class Issue extends Component {
 
           <div className="meta-wrapper">
             <div className="issue-number">#{number} </div>
-            <div className="ml-5">Opened on {created_at || ''}</div>
+            <div className="ml-5">Opened on {meaningFullTime(created_at)}</div>
             <div className="ml-5">By {user.login} </div>
           </div>
         </div>

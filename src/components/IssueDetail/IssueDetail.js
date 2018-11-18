@@ -7,6 +7,7 @@ import Octicon, { IssueOpened } from '@githubprimer/octicons-react';
 import './IssueDetail.css';
 import { Redirect } from 'react-router-dom';
 import { Issues } from '../Issues/Issues';
+import { meaningFullTime } from '../../util/helpers';
 
 class IssueDetail extends Component {
   componentDidMount() {
@@ -43,7 +44,8 @@ class IssueDetail extends Component {
           &nbsp;Open
         </div>
         <div className="ml-5 color-light">
-          <b>{login}</b> opened this issue on {created_at} . {comments} Comments
+          <b>{login}</b> opened this issue on {meaningFullTime(created_at)} .{' '}
+          {comments} Comments
         </div>
       </div>
     );

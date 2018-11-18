@@ -130,8 +130,9 @@ ShallowWrapper {
               savedo
             </b>
              opened this issue on 
-            xx.yy.zzzz
-             . 
+            just now
+             .
+             
             1
              Comments
           </div>
@@ -376,8 +377,9 @@ ShallowWrapper {
                 savedo
               </b>
                opened this issue on 
-              xx.yy.zzzz
-               . 
+              just now
+               .
+               
               1
                Comments
             </div>,
@@ -434,8 +436,9 @@ ShallowWrapper {
                   savedo
                 </b>,
                 " opened this issue on ",
-                "xx.yy.zzzz",
-                " . ",
+                "just now",
+                " .",
+                " ",
                 1,
                 " Comments",
               ],
@@ -455,8 +458,9 @@ ShallowWrapper {
                 "type": "b",
               },
               " opened this issue on ",
-              "xx.yy.zzzz",
-              " . ",
+              "just now",
+              " .",
+              " ",
               1,
               " Comments",
             ],
@@ -578,8 +582,9 @@ ShallowWrapper {
                 savedo
               </b>
                opened this issue on 
-              xx.yy.zzzz
-               . 
+              just now
+               .
+               
               1
                Comments
             </div>
@@ -824,8 +829,9 @@ ShallowWrapper {
                   savedo
                 </b>
                  opened this issue on 
-                xx.yy.zzzz
-                 . 
+                just now
+                 .
+                 
                 1
                  Comments
               </div>,
@@ -882,8 +888,9 @@ ShallowWrapper {
                     savedo
                   </b>,
                   " opened this issue on ",
-                  "xx.yy.zzzz",
-                  " . ",
+                  "just now",
+                  " .",
+                  " ",
                   1,
                   " Comments",
                 ],
@@ -903,8 +910,9 @@ ShallowWrapper {
                   "type": "b",
                 },
                 " opened this issue on ",
-                "xx.yy.zzzz",
-                " . ",
+                "just now",
+                " .",
+                " ",
                 1,
                 " Comments",
               ],

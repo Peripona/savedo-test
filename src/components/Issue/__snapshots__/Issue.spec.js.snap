@@ -98,7 +98,7 @@ ShallowWrapper {
               className="ml-5"
             >
               Opened on 
-              2018-11-13T08:26:59Z
+              5 days ago
             </div>
             <div
               className="ml-5"
@@ -203,7 +203,7 @@ ShallowWrapper {
                 className="ml-5"
               >
                 Opened on 
-                2018-11-13T08:26:59Z
+                5 days ago
               </div>
               <div
                 className="ml-5"
@@ -303,7 +303,7 @@ ShallowWrapper {
                   className="ml-5"
                 >
                   Opened on 
-                  2018-11-13T08:26:59Z
+                  5 days ago
                 </div>,
                 <div
                   className="ml-5"
@@ -344,14 +344,14 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Opened on ",
-                    "2018-11-13T08:26:59Z",
+                    "5 days ago",
                   ],
                   "className": "ml-5",
                 },
                 "ref": null,
                 "rendered": Array [
                   "Opened on ",
-                  "2018-11-13T08:26:59Z",
+                  "5 days ago",
                 ],
                 "type": "div",
               },
@@ -500,7 +500,7 @@ ShallowWrapper {
                 className="ml-5"
               >
                 Opened on 
-                2018-11-13T08:26:59Z
+                5 days ago
               </div>
               <div
                 className="ml-5"
@@ -605,7 +605,7 @@ ShallowWrapper {
                   className="ml-5"
                 >
                   Opened on 
-                  2018-11-13T08:26:59Z
+                  5 days ago
                 </div>
                 <div
                   className="ml-5"
@@ -705,7 +705,7 @@ ShallowWrapper {
                     className="ml-5"
                   >
                     Opened on 
-                    2018-11-13T08:26:59Z
+                    5 days ago
                   </div>,
                   <div
                     className="ml-5"
@@ -746,14 +746,14 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Opened on ",
-                      "2018-11-13T08:26:59Z",
+                      "5 days ago",
                     ],
                     "className": "ml-5",
                   },
                   "ref": null,
                   "rendered": Array [
                     "Opened on ",
-                    "2018-11-13T08:26:59Z",
+                    "5 days ago",
                   ],
                   "type": "div",
                 },
