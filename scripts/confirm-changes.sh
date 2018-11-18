@@ -27,6 +27,14 @@ while read -p "Do you know which issue or PR numbers to reference? (Y/n) " yn; d
     esac
 done
 
-echo "Your changes will be on its way now..🤞🤞";
+while read -p "Do you want to deploy 🎬 on github-pages? (Y/n) " yn; do
+    case $yn in
+        [Yy] ) npm run deploy; echo "\x1B[0;32m deployed on github pages \x1B[0m "; break;;
+        [Nn] ) echo "Please add or update the docs!"; exit 1;;
+        * ) echo "Please answer y (yes) or n (no):" && continue;
+    esac
+done
+
+echo "🤞🤞 ..Your changes will be on its way now.. 🤞🤞";
 
 exec <&-
