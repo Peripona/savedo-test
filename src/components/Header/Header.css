@@ -1,0 +1,16 @@
+.header{
+  height: 60px;
+  background-color: #010101;
+  padding:0 15px;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  height: 35px;
+  width: 35px;
+}
+@media only screen and (max-width: 620px) {
+  .header{
+    justify-content: center;
+  }
+}

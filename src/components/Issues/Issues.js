@@ -13,7 +13,7 @@ class Issues extends Component {
   //https://github.com/ReactTraining/history/pull/570 :: multiple clicks on Link causes browser history to explode
   static getPageTitle() {
     return (
-      <Link className="mt-20 home" to={'/'}>
+      <Link className="home" to={'/'}>
         <span>
           <Octicon icon={Repo} size="small" verticalAlign="middle" />
         </span>

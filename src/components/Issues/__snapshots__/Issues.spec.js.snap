@@ -604,7 +604,7 @@ browser: safari
         className="issues"
       >
         <Link
-          className="mt-20 home"
+          className="home"
           replace={false}
           to="/"
         >
@@ -806,7 +806,7 @@ browser: safari
       "props": Object {
         "children": Array [
           <Link
-            className="mt-20 home"
+            className="home"
             replace={false}
             to="/"
           >
@@ -1026,7 +1026,7 @@ browser: safari
                 </b>
               </span>,
             ],
-            "className": "mt-20 home",
+            "className": "home",
             "replace": false,
             "to": "/",
           },
@@ -1634,7 +1634,7 @@ browser: safari
           className="issues"
         >
           <Link
-            className="mt-20 home"
+            className="home"
             replace={false}
             to="/"
           >
@@ -1836,7 +1836,7 @@ browser: safari
         "props": Object {
           "children": Array [
             <Link
-              className="mt-20 home"
+              className="home"
               replace={false}
               to="/"
             >
@@ -2056,7 +2056,7 @@ browser: safari
                   </b>
                 </span>,
               ],
-              "className": "mt-20 home",
+              "className": "home",
               "replace": false,
               "to": "/",
             },

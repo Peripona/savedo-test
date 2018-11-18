@@ -29,6 +29,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run deploy` 
+
+Build the project and deploy it to github pages project can be accessed on https://peripona.github.io/savedo-test/
+
 ### `npm run scaffold <componentName>`
 
 **Note: to create a react component. first you should change directory to src/components!**

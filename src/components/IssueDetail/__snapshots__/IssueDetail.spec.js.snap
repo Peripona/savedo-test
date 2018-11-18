@@ -71,7 +71,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Link
-          className="mt-20 home"
+          className="home"
           replace={false}
           to="/"
         >
@@ -198,7 +198,7 @@ ShallowWrapper {
               </b>
             </span>,
           ],
-          "className": "mt-20 home",
+          "className": "home",
           "replace": false,
           "to": "/",
         },
@@ -523,7 +523,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Link
-            className="mt-20 home"
+            className="home"
             replace={false}
             to="/"
           >
@@ -650,7 +650,7 @@ ShallowWrapper {
                 </b>
               </span>,
             ],
-            "className": "mt-20 home",
+            "className": "home",
             "replace": false,
             "to": "/",
           },

@@ -6,12 +6,14 @@ import { store, history } from '../../state/store';
 import { IssuesConnected } from '../Issues/Issues';
 import NotFound from '../NotFound/NotFound';
 import { IssueDetailConnected } from '../IssueDetail/IssueDetail';
+import Header from '../Header/Header';
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
         <ConnectedRouter history={history}>
+          <Header />
           <Switch>
             <Route exact path="/" component={IssuesConnected} />
             <Route
